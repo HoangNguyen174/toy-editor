@@ -12,7 +12,7 @@ The app will runs at http://localhost:3000 by default
 
 **Write out a short plan for what you would need to change / add to your program to support the following features**
 
-1. **localStorage based persistence**
+1. **localStorage based persistence**  
   I already setup Redux store to keep track of some of the app states. To add support for localStorage, we can do the following
   - implement abstract PersistanceStore class that wraps around localstorage interface so in the future we can swap it with something else
   - connect redux store with PersistanceStore class by using middleware. Most of events in this app are triggered by redux action and will be intercepted by our middleware. We can pick and choose what we want to write into localstorage before running reducer
