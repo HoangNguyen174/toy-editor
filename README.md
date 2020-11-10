@@ -9,7 +9,6 @@ npm run start
 
 The app will runs at http://localhost:3000 by default
 
-
 Write out a short plan for what you would need to change / add to your program to support the following features
 
 1. localStorage based persistence
@@ -21,8 +20,9 @@ Write out a short plan for what you would need to change / add to your program t
 
 2. undo/redo
   - We can do this with redux by creating three arrays, future - current - past to store app state at any given time. 
-  For example to handle undo, we can remove that last state from stack array, set the current array we removed from past array, insert the old current state at the start of the future stack.
-  - For non-redux implementation, we can use Command pattern to simulate undo/redo 
+  - For example to handle undo, we can remove that last state from path array, set the current array we removed from past array, insert the old current state at the start of the future stack. Vice versa for Reo.
+  - For any other actions, we can insert current state at the end of past arry. Set the present to new state after the action. Then clear the future
+  - For non-redux implementation, we can use Command pattern to simulate undo/redo.
 
 3. save to image
   - I use canvas2image npm package to save to image
