@@ -1,0 +1,27 @@
+.shape-editor {
+  width: 300px;
+  border: 1px solid black;
+  text-align: left;
+  padding: 4px;
+  margin-left: 18px;
+
+  &__header {
+    text-align: center;
+    font-weight: bold;
+    button {
+      width: 150px;
+    };
+  }
+
+  &__input {
+    margin: 8px;
+
+    label {
+      text-align: left;
+    }
+    
+    &__pos {
+      margin-bottom: 8px;
+    }
+  }
+}

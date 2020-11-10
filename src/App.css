@@ -2,6 +2,25 @@
   text-align: center;
 }
 
+.editor {
+  display: inline-flex;
+}
+
+.render-btns {
+  margin: 8px;
+  display: block;
+  width: 200px;
+  text-align: left;
+}
+
+.shape-properties-editor {
+  width: 300px;
+}
+
+.render-btns button {
+  margin: 8px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

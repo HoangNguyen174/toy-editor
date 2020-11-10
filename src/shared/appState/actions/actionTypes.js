@@ -1,0 +1,5 @@
+export const SET_SELECTED_SHAPE = 'SET_SELECTED_SHAPE';
+export const DESELECT_SHAPE = 'DESELECT_SHAPE';
+export const DELETE_SHAPE = 'DELETE_SHAPE';
+export const EDIT_SHAPE_PROP = 'MODIFY_SHAPE_PROP';
+export const SET_ACTION = 'SET_ACTION';
